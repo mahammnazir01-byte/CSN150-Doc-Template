@@ -1,8 +1,8 @@
 # Cybersecurity : CSN150
-Project: ESP32 XXXXXXXX
+Project: ESP32 WiFi Scanner
 
 ## Purpose
-Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner". 
+Set up the ESP32-CAM and Arduino environment. Upload and execute the WiFiScanner sketch to detect nearby Wi-Fi networks and analyze signal strength (RSSI).
 
 ## Equipment
 * [ESP32Cam](https://www.amazon.com/Aideepen-ESP32-CAM-Bluetooth-ESP32-CAM-MB-Arduino/dp/B08P2578LV/ref=sr_1_3?crid=4FY0ECFW0ZX7&keywords=ESP32+Cam&qid=1678902050&sprefix=esp32+cam%2Caps%2C240&sr=8-3)
@@ -15,20 +15,18 @@ Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner".
 
 ##### Other Links: 
 
-##### AI GPTs used
+##### AI GPTs used: ChatGPT
 
 ## Steps I followed
-1. Write the steps you followed here.  This way you can keep track of where you might have messed up if the project does not work. 
+1. Connected the ESP32-CAM using a USB data cable.
+2.Opened Arduino IDE and selected the ESP32 board.
+3.Loaded the WiFiScanner example sketch.
+4.Uploaded the sketch to the ESP32-CAM.
+5.Opened Serial Monitor to view scan results.
+6.Recorded the number of networks detected, strongest signal, and RSSI values.
 
-## Problems and Solutions
-Note your problems or errors here.  Google any error you may come across, and not what you tried (even if it does not work), and what was the final answer. Document your errors and solutions that worked for you.  
+## Problems and Solutions.
+**Problem:** The ESP32-CAM could not detect or communicate with the camera module. Because of this, the board failed to start the camera correctly and showed an error saying the camera was not found. 
 
-**Problem:** E (485) camera: Camera probe failed with error 0x105(ESP_ERR_NOT_FOUND)
-Camera init failed with error 0x105
-**Solution:**
-
-### Example Problem
-**Problem:** Arduino code will not load on ESP32 Cam.
-**Solution:** Camera drivers were incorrect I needed to install the driver: [https://www.wch-ic.com/downloads/CH341SER_ZIP.html](https://github.com/martin-ger/esp32_nat_router).  I used file, "CH341SER.ZIP" and it worked.
-
+**Solution:I fixed the problem by checking the camera connection and making sure the ribbon cable was fully seated and facing the right direction. After reconnecting it properly and restarting the ESP32-CAM, the camera was detected correctly and the error went away.
 ## Final Report
