@@ -19,10 +19,15 @@ Set up the ESP32-CAM and Arduino environment. Upload and execute the WiFiScanner
 
 ## Steps I followed
 1. Connected the ESP32-CAM using a USB data cable.
+
 2.Opened Arduino IDE and selected the ESP32 board.
+
 3.Loaded the WiFiScanner example sketch.
+
 4.Uploaded the sketch to the ESP32-CAM.
+
 5.Opened Serial Monitor to view scan results.
+
 6.Recorded the number of networks detected, strongest signal, and RSSI values.
 
 ## Problems and Solutions.
